@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThosFix - Inici i Problema</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+      <span class="status-badge">Estat: Validat pel Professorat</span>
+      <h1>ThosFix: Gestió d'Incidències d'Aula</h1>
+      <p class="tagline">Aplicació web senzilla per al report i seguiment d'avaries informàtiques.</p>
+      
+      <div class="meta-grid">
+        <div class="meta-item"><strong>Cicle i Mòdul</strong><span>CFGM SMX - Proj. Intermodular</span></div>
+        <div class="meta-item"><strong>Centre</strong><span>Institut Thos i Codina</span></div>
+        <div class="meta-item"><strong>Equip</strong><span>TechSquad SMX</span></div>
+        <div class="meta-item"><strong>Integrants</strong><span>Marc Garcia, Laura Martínez, Alex Pujol</span></div>
+        <div class="meta-item"><strong>Data Inici / Final</strong><span>10/02/2026 - 30/03/2026</span></div>
+        <div class="meta-item"><strong>Versió</strong><span>1.0</span></div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <div class="container">
+      <ul>
+        <li><a href="index.html" class="active">1. Proposta & Problema</a></li>
+        <li><a href="especificacions.html">2. Especificacions</a></li>
+        <li><a href="mvp.html">3. MVP & Validació</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <section id="sec1">
+      <h2>1. Presentació Breu</h2>
+      <p><strong>ThosFix</strong> és una aplicació web dissenyada per centralitzar la comunicació d'incidències tècniques (projectors que no funcionen, ordinadors sense xarxa, teclats danyats) a les aules de l'Institut Thos i Codina.</p>
+      <p>L'objectiu és que qualsevol docent pugui notificar un problema des del mòbil en menys d'un minut i que l'equip de manteniment d'SMX pugui gestionar i resoldre les peticions de forma ordenada.</p>
+    </section>
+
+    <section id="sec2">
+      <h2>2. Definició del Problema</h2>
+      <h3>2.1. Quin problema volem resoldre?</h3>
+      <p><strong>Què està passant actualment?</strong> Quan s'avaria un equip a l'aula, els docents ho apunten en un paper a la sala de professors o envien correus informals que es perden.</p>
+      <p><strong>A qui afecta?</strong> Al professorat (perd temps de classe), a l'alumnat (no pot seguir la classe) i a l'equip de manteniment d'SMX (no rep la informació centralitzada).</p>
+      <p><strong>Per què és important solucionar-lo?</strong> Si no es resol, l'equipament danyat roman setmanes sense reparar, paralitzant les sessions pràctiques.</p>
+
+      <div class="callout callout-challenge">
+        <strong>El nostre repte:</strong><br>
+        Com podríem ajudar els docents de l'Institut Thos i Codina a notificar avaries tècniques d'aula de manera ràpida i centralitzada mitjançant una web senzilla accessible des del mòbil?
+      </div>
+
+      <h3>2.3. Evidències recollides</h3>
+      <p>Vam realitzar una enquesta a 12 professors del centre: el 83% va afirmar que ha hagut d'improvisar una classe per fallades tècniques no resoltes a temps.</p>
+    </section>
+
+    <section id="sec3">
+      <h2>3. La nostra Proposta de Solució</h2>
+      <p>Proposem crear <strong>ThosFix</strong>, un portal web lleuger adaptat a dispositius mòbils.</p>
+
+      <h3>Funcionament pas a pas:</h3>
+      <ol class="steps">
+        <li>El professor escaneja el codi QR enganxat a la taula de l'aula.</li>
+        <li>S'obre el formulari web amb l'aula ja seleccionada automàticament.</li>
+        <li>El professor tria el tipus d'avaria (Pantalla, Xarxa, Perifèrics) i escriu un breu comentari.</li>
+        <li>S'envia el formulari i la incidència queda registrada amb estat "Pendent".</li>
+        <li>L'alumnat de manteniment consulta el panell web, assigna el problema i el marca com a "Resolt".</li>
+      </ol>
+
+      <h3>Què NO farà el projecte (Límits):</h3>
+      <p>La versió 1.0 <strong>no inclourà</strong> notificacions per SMS, enviament d'imatges adjuntes, ni integració amb la base de dades oficial del Departament.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Projecte Intermodular SMX — Institut Thos i Codina — Versió 1.0</p>
+    </div>
+  </footer>
+
+</body>
+</html>
